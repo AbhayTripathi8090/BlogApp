@@ -10,7 +10,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PrivateRoute from "./components/PrivateRoute"; // ✅ PRIVATE ROUTE
 import ProfilePage from "./pages/ProfilePage.jsx";
-// import jwtDecode from "jwt-decode";
+
+
 
 function App() {
   
@@ -24,9 +25,11 @@ function App() {
   };
 
   return (
+    
     <div className="container mx-auto mt-4">
       {/* Navbar */}
-      <nav className="bg-purple-900 p-4 rounded-lg shadow-lg flex items-center justify-between">
+     
+      <nav className="bg-purple-900 p-4 rounded-lg shadow-lg flex items-center justify-between  ">
         <Link
           to="/"
           className="text-white font-bold text-2xl tracking-wide hover:text-purple-300 transition duration-200 !no-underline"
@@ -140,6 +143,7 @@ function App() {
 
       <ToastContainer position="top-center" autoClose={2000} />
     </div>
+
   );
 }
 
